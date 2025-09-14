@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.navigation {
+    display: flex;
+    padding: 16px 32px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
+
+.nav-logo {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333333;
+    letter-spacing: -0.5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin: 0;
+}
+
+.nav-logo:hover {
+    color: #FF746C;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.nav-item {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #333333;
+    letter-spacing: -0.5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    color: #FF746C;
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        padding: 16px;
+    }
+    .nav-logo {
+        font-size: 1.25rem;
+    }
+    .nav-menu {
+        gap: 8px;
+    }
+    .nav-item {
+        font-size: 1.25rem;
+    }
+}

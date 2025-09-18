@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import LandingPage from './pages/LandingPage';
 import RecipePage from './pages/RecipePage';
+import RecipePageOriginal from './pages/RecipePageOriginal';
 
 import './App.css';
 
@@ -13,6 +14,7 @@ function App() {
         <Routes>
           <Route path='/' element={<LandingPage />} />
           <Route path='/recipe/:id' element={<RecipePage />} />'
+          <Route path='/recipe-original/:id' element={<RecipePageOriginal />} />
           <Route path='*' element={<LandingPage />} />
         </Routes>
       </div>

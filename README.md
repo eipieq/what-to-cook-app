@@ -1,3 +1,3 @@
 Can't decide what to cook?
 
-https://sandPprk.co
+https://sandpark.co

@@ -1,51 +1,56 @@
-.loading-page {
+.landing-page {
     display: flex;
     width: 100%;
     flex-direction: column;
-    align-items: center;
-}
 
-.content {
-    display: flex;
-    padding: 128px 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    align-self: stretch;
-}
+    .content {
+        display: flex;
+        padding: 128px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        align-self: stretch;
 
-h1 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 2.25rem;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: -0.5px;
-}
+        h1 {
+            font-family: 'Nunito', sans-serif;
+            font-size: 2.25rem;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -0.5px;
+            text-align: center;
+            color: #333333;
+        }
 
-.get-started {
-    display: flex;
-    padding: 6px 16px;
-    align-items: center;
-    gap: 8px;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    background: #f7f7f7;
-    font-family: 'Nunito', sans-serif;
-    font-size: 1.25rem;
-    font-weight: 500;
-    letter-spacing: -0.5px;
-    transition: background-color 0.3s ease;
-}
+        .get-started {
+            display: flex;
+            padding: 6px 16px;
+            align-items: center;
+            gap: 8px;
+            border-radius: 10px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            background: white;
+            color: #FF746C;
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            transition: background-color 0.3s ease;
 
-.get-started:hover {
-    background-color: #ececec;
+            &:hover {
+                background-color: #FF746C;
+                color: white;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-    }
-    .get-started {
-        font-size: 1rem;
+    .landing-page .content {
+        h1 {
+            font-size: 2rem;
+        }
+        .get-started {
+            font-size: 1rem;
+        }
     }
 }
